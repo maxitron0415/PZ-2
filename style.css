@@ -8,7 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 
-/* Базовые стили с обновленной типографикой */
 .page {
     font-family: "Unbounded", sans-serif;
     line-height: 1.5;
@@ -22,84 +21,81 @@
     margin: 0 auto;
 }
 
-/* Обновленные стили типографики согласно руководству */
 
-/* Блок: Title - заголовки */
 .title {
     font-family: "Unbounded", sans-serif;
     font-weight: 300;
     line-height: 1.5;
 }
 
-/* Headline One - 36pt */
+
 .title--h1 {
-    font-size: 24pt; /* 48px в переводе на пиксели */
+    font-size: 24pt;
     font-weight: 300;
 }
 
-/* Headline Two - 32pt */
+
 .title--h2 {
-    font-size: 22pt; /* 42.67px */
+    font-size: 22pt;
     font-weight: 300;
 }
 
-/* Headline Three - 24pt */
+
 .title--h3 {
-    font-size: 16pt; /* 32px */
+    font-size: 16pt;
     font-weight: 300;
 }
 
-/* Headline Four - 20pt */
+
 .title--h4 {
-    font-size: 14pt; /* 26.67px */
+    font-size: 14pt;
     font-weight: 300;
 }
 
-/* Headline Five - 16pt */
+
 .title--h5 {
-    font-size: 14pt; /* 21.33px */
+    font-size: 14pt;
     font-weight: 300;
     line-height: 1.5;
 }
 
-/* Headline Six - 14pt */
+
 .title--h6 {
-    font-size: 14pt; /* 18.67px */
+    font-size: 14pt;
     font-weight: 300;
     line-height: 1.5;
 }
 
-/* Body Text Styles */
-/* Body Large - 18pt */
+
 .text--large {
-    font-size: 18pt; /* 24px */
+    font-size: 18pt;
     font-size: 1.5rem;
     line-height: 1.5;
     font-weight: 300;
 }
 
-/* Body Medium - 16pt (базовый размер) */
+
 .text--medium {
-    font-size: 16pt; /* 21.33px */
+    font-size: 16pt;
     font-size: 1.333rem;
     line-height: 1.5;
     font-weight: 300;
 }
 
-/* Body Small - 14pt */
+
 .text--small {
-    font-size: 14pt; /* 18.67px */
+    font-size: 14pt;
     font-size: 1.167rem;
     line-height: 1.5;
     font-weight: 300;
 }
 
-/* Блок: Button */
+
 .button {
     display: inline-block;
     padding: 12px 24px;
     font-family: "Unbounded", sans-serif;
-    font-size: 14pt; /* Headline Six размер */
+    font-size: 14pt;
     font-size: 1.167rem;
     font-weight: 300;
     text-decoration: none;
@@ -165,7 +161,7 @@
     opacity: 0.8;
 }
 
-/* Блок: Header */
+
 .header {
     background-color: #fff;
     border-bottom: 1px solid #eaeaea;
@@ -189,8 +185,6 @@
     align-items: center;
 }
 
-.header__logo img {
-}
 
 .header__user-actions {
     display: flex;
@@ -202,7 +196,7 @@
     justify-content: center;
 }
 
-/* Блок: Menu */
+
 .menu {
     display: flex;
     list-style: none;
@@ -212,7 +206,7 @@
 .menu__link {
     text-decoration: none;
     color: #2a254a;
-    font-size: 14pt; /* Headline Six размер для навигации */
+    font-size: 14pt;
     font-size: 1.167rem;
     font-weight: 300;
     padding: 8px 0;
@@ -240,7 +234,7 @@
     width: 100%;
 }
 
-/* Блок: Hero */
+
 .hero {
     padding: 80px 0;
     background-color: #ffffff;
@@ -273,7 +267,7 @@
 }
 
 .hero__description {
-    font-size: 14pt; /* Body Large */
+    font-size: 14pt;
     color: #ffffff;
     max-width: 500px;
     line-height: 1.5;
@@ -288,7 +282,7 @@
     height: auto;
 }
 
-/* Блок: Features */
+
 .features {
     padding: 80px 0;
 }
@@ -305,7 +299,7 @@
     gap: 32px;
 }
 
-/* Блок: Feature-card */
+
 .feature-card {
     text-align: center;
     padding: 24px;
@@ -341,7 +335,7 @@
     text-align: left;
 }
 
-/* Блок: New-products */
+
 .new-products {
     padding: 80px 0;
     background-color: #ffffff;
@@ -357,7 +351,7 @@
     margin-top: 48px;
 }
 
-/* Блок: Popular-products */
+
 .popular-products {
     padding: 80px 0;
 }
@@ -371,14 +365,14 @@
     margin-top: 48px;
 }
 
-/* Блок: Product-grid */
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-/* Блок: Product-card */
+
 .product-card {
     background-color: #fff;
     overflow: hidden;
@@ -422,7 +416,7 @@
 .product-card__description {
     padding: 0 16px;
     color: #666;
-    font-size: 14pt; /* Body Small */
+    font-size: 14pt;
     font-size: 1.167rem;
     line-height: 1.5;
 }
@@ -431,7 +425,7 @@
     padding: 8px 16px 16px;
     font-weight: 300;
     color: #2a254a;
-    font-size: 18pt; /* Body Large для цен */
+    font-size: 18pt;
     font-size: 1.5rem;
     line-height: 1.5;
 }
@@ -440,10 +434,9 @@
     grid-column: span 2;
 }
 
-.product-card--large .product-card__image {
-}
 
-/* Блок: Newsletter */
+
+
 .newsletter {
     padding: 80px 0;
     background-color: #f9f9f9;
@@ -469,7 +462,7 @@
 .newsletter__description {
     margin-bottom: 32px;
     opacity: 0.9;
-    font-size: 16pt; /* Body Medium */
+    font-size: 16pt;
     font-size: 1.333rem;
     line-height: 1.5;
 }
@@ -485,7 +478,7 @@
     padding: 12px 16px;
     border: none;
     font-family: "Unbounded", sans-serif;
-    font-size: 14pt; /* Headline Six / Body Small */
+    font-size: 14pt;
     font-size: 1.167rem;
     line-height: 1.5;
     background-color: #f9f9f9;
@@ -500,7 +493,7 @@
     white-space: nowrap;
 }
 
-/* Блок: About */
+
 .about {
     padding: 80px 0px 0px 0px;
 }
@@ -545,7 +538,7 @@
     height: auto;
 }
 
-/* Блок: Footer */
+
 .footer {
     background-color: #2a254a;
     color: white;
@@ -575,7 +568,7 @@
 .footer__link {
     color: #ccc;
     text-decoration: none;
-    font-size: 14pt; /* Body Small */
+    font-size: 14pt;
     font-size: 1.167rem;
     transition: color 0.3s ease;
     line-height: 1.5;
@@ -594,7 +587,7 @@
     padding: 12px 16px;
     border: none;
     font-family: "Unbounded", sans-serif;
-    font-size: 14pt; /* Headline Six / Body Small */
+    font-size: 14pt;
     font-size: 1.167rem;
     line-height: 1.5;
     background-color: #484364;
@@ -625,7 +618,7 @@
 
 .footer__copyright-text {
     color: #999;
-    font-size: 14pt; /* Body Small */
+    font-size: 14pt;
     font-size: 1.167rem;
     line-height: 1.5;
 }
@@ -649,7 +642,7 @@
     width: auto;
 }
 
-/* Дополнительные текстовые классы для гибкости */
+
 .text-center {
     text-align: center;
 }
@@ -674,7 +667,6 @@
     font-weight: 300;
 }
 
-/* Адаптивность */
 @media (max-width: 1024px) {
     .container{
         max-width: 90%;
@@ -697,7 +689,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
-    /* Адаптивная типографика для планшетов */
     .title--h1 {
         font-size: 2.5rem;
     }
@@ -737,7 +728,6 @@
         text-align: center;
     }
     
-    /* Адаптивная типографика для мобильных */
     .title--h1 {
         font-size: 2rem;
     }
@@ -781,7 +771,6 @@
         grid-template-columns: 1fr;
     }
     
-    /* Минимальные размеры типографики для маленьких экранов */
     .title--h1 {
         font-size: 1.75rem;
     }
