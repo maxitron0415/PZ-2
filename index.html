@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avion</title>
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 1024px)">
+
 </head>
 <body class="page">
     <header class="header">
         <div class="header__container container">
             <nav class="header__nav">
                 <div class="header__top">
+                    
                     <div class="header__search-wrapper">
                         <button class="header__search-button button button--icon">
                             <img src="./assets/icons/Search.png" alt="Search">
@@ -28,9 +31,23 @@
                             <img src="./assets/icons/User--avatar.png" alt="User">
                         </button>
                     </div>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                        <span class="menu-toggle__line"></span>
+                        <span class="menu-toggle__line"></span>
+                        <span class="menu-toggle__line"></span>
+                    </button>
+
                 </div>
                 <div class="header__bottom">
-                    <ul class="header__menu menu">
+                    <ul class="header__menu menu" id="mainNav">
+                        <li class="menu__actions">
+                            <button class="button button--icon">
+                                <img src="./assets/icons/User--avatar.png" alt="User">
+                            </button>
+                            <button class="button button--icon">
+                                <img src="./assets/icons/Shopping--cart.png" alt="Cart">
+                            </button>
+                        </li>
                         <li class="menu__item"><a href="" class="menu__link">Plant pots</a></li>
                         <li class="menu__item"><a href="#new-products" class="menu__link">Ceramics</a></li>
                         <li class="menu__item"><a href="" class="menu__link">Tables</a></li>
@@ -263,5 +280,9 @@
             </div>
         </div>
     </footer>
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+<script src="./scripts/menu.js"></script>
+
+
 </body>
 </html>

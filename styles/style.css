@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    min-height: 100%;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 .page {
-    font-family: "Unbounded", sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5;
     color: #333;
     background-color: #fff;
@@ -23,33 +26,33 @@
 
 
 .title {
-    font-family: "Unbounded", sans-serif;
-    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     line-height: 1.5;
 }
 
 
 .title--h1 {
     font-size: 24pt;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
 .title--h2 {
     font-size: 22pt;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
 .title--h3 {
     font-size: 16pt;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
 .title--h4 {
     font-size: 14pt;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -94,10 +97,10 @@
 .button {
     display: inline-block;
     padding: 12px 24px;
-    font-family: "Unbounded", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14pt;
     font-size: 1.167rem;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -208,7 +211,7 @@
     color: #2a254a;
     font-size: 14pt;
     font-size: 1.167rem;
-    font-weight: 300;
+    font-weight: 400;
     padding: 8px 0;
     position: relative;
     transition: color 0.3s ease;
@@ -423,7 +426,7 @@
 
 .product-card__price {
     padding: 8px 16px 16px;
-    font-weight: 300;
+    font-weight: 400;
     color: #2a254a;
     font-size: 18pt;
     font-size: 1.5rem;
@@ -477,7 +480,7 @@
     flex: 1;
     padding: 12px 16px;
     border: none;
-    font-family: "Unbounded", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14pt;
     font-size: 1.167rem;
     line-height: 1.5;
@@ -586,7 +589,7 @@
 .footer__input {
     padding: 12px 16px;
     border: none;
-    font-family: "Unbounded", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14pt;
     font-size: 1.167rem;
     line-height: 1.5;
@@ -652,11 +655,11 @@
 }
 
 .text-bold {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .text-semibold {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .text-regular {
@@ -674,6 +677,10 @@
     
     .hero__content{
         margin-top: 50px;
+    }
+    
+    .menu__item{
+        margin-top: 20px;
     }
 
     .features__grid,
@@ -783,3 +790,98 @@
         font-size: 1.25rem;
     }
 }
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    padding: 12px 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle__line {
+    width: 100%;
+    height: 3px;
+    background: #2a254a;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Кнопка "Наверх" */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    background: #2a254a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: #484364;
+    transform: scale(1.1);
+}
+
+.scroll-top.active {
+    transform: scale(0.95);
+}
+
+
+
+@media (max-width: 340px) {
+    .hero__content {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu__actions{
+        display: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: auto;
+}
+
+
+
